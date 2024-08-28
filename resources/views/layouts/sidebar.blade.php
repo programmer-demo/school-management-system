@@ -35,7 +35,7 @@
                 </ul>
             </li>
             <li class="">
-                <a href="#" title="">
+                <a href="" title="">
                     <i class="fa fa-lg fa-fw fa-female"></i>
                     <span class="menu-item-parent">Students</span>
                 </a>
