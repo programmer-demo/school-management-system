@@ -43,6 +43,13 @@
     <link rel="apple-touch-icon" sizes="120x120" href="assets/img/splash/touch-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/splash/touch-icon-ipad-retina.png">
 
+{{--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"--}}
+{{--          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">--}}
+{{--    <style>--}}
+{{--        *{--}}
+{{--            font-size: 12px !important;--}}
+{{--        }--}}
+{{--    </style>--}}
 </head>
 
 <!--

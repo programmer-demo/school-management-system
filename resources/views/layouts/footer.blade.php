@@ -1,5 +1,5 @@
 <!-- PAGE FOOTER -->
-<div class="page-footer">
+<div class="page-footer" style="font-size: 12px !important;">
     <div class="row">
         <div class="col-xs-12 col-sm-6">
             <span class="txt-color-white">Rith : 1.9.0 <span class="hidden-xs"> - Web Application Framework</span> © 2017-2019</span>
