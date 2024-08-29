@@ -35,12 +35,19 @@
                 </ul>
             </li>
             <li class="">
+<<<<<<< HEAD
                 <a href="#" title=""><i class="fa fa-lg fa-fw fa-female"></i><span class="menu-item-parent">Students</span> </a>
                 <ul>
                     <li>
                         <a href="{{route('students')}}">Students</a>
                     </li>
                 </ul>
+=======
+                <a href="" title="">
+                    <i class="fa fa-lg fa-fw fa-female"></i>
+                    <span class="menu-item-parent">Students</span>
+                </a>
+>>>>>>> fb0ad8cbe7a4597c6257e0743d17383ece4a754a
             </li>
 {{--            <li>--}}
 {{--                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">Report</span></a>--}}
