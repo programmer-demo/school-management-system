@@ -35,10 +35,12 @@
                 </ul>
             </li>
             <li class="">
-                <a href="#" title="">
-                    <i class="fa fa-lg fa-fw fa-female"></i>
-                    <span class="menu-item-parent">Students</span>
-                </a>
+                <a href="#" title=""><i class="fa fa-lg fa-fw fa-female"></i><span class="menu-item-parent">Students</span> </a>
+                <ul>
+                    <li>
+                        <a href="{{route('students')}}">Students</a>
+                    </li>
+                </ul>
             </li>
 {{--            <li>--}}
 {{--                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">Report</span></a>--}}
@@ -48,6 +50,7 @@
 {{--                    </li>--}}
 {{--                </ul>--}}
 {{--            </li>--}}
+
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-gear"></i> <span class="menu-item-parent">Set Up</span></a>
                 <ul>
@@ -61,6 +64,9 @@
                 <ul>
                     <li>
                         <a href="{{route('user.index')}}">User</a>
+                    </li>
+                    <li>
+                        <a href="#">User Profile</a>
                     </li>
                 </ul>
             </li>
@@ -94,6 +100,19 @@
 {{--                    <li><a href="orders.html">Orders</a></li>--}}
 {{--                </ul>--}}
 {{--            </li>--}}
+
+            <li>
+                <a href="#"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">Payment</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Payment</a>
+                    </li>
+                    <li>
+                        <a href="#">Payment Detail</a>
+                    </li>
+                </ul>
+            </li>
+
         </ul>
     </nav>
 
