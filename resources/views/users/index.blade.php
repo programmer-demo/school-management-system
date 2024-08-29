@@ -1,3 +1,4 @@
+
 @extends('layouts.main')
 @section('content')
     <div id="main" role="main">
@@ -17,12 +18,16 @@
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
 
             <div class="row">
-                <div class="col-xs-12 col-sm-6" style="padding-bottom: 5px">
+                <div class="col-xs-12 col-sm-6  " style="padding-bottom: 5px; ">
                     <label class="" style="display: flex;">
                         <span class="input-group-addon" style="width: 10%">
                              <i class="glyphicon glyphicon-search"></i>
                         </span>
                         <input type="text" class="form-control" placeholder="search" style="width: 40%">
+                        {{-- create button --}}
+                        <span class="" style="position: absolute; margin-left:170vh; display:flex; flex-wrap:wrap;">
+                            <button type="button" class="btn btn-success">Add</button>
+                        </span>
                     </label>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
