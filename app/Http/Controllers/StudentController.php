@@ -10,7 +10,7 @@ class StudentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index_student()
+    public function index()
     {
         $students = Student::get();
         return view('students.index' , compact('students'));

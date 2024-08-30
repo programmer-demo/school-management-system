@@ -9,4 +9,4 @@ Route::get('/index', function(){
     return view('index');
 })->name('index');
 Route::resource('user' , UserController::class);
-Route::get('/students', [StudentController::class ,'index_student'])->name('students');
+Route::get('students', [StudentController::class ,'index'])->name('student.index');

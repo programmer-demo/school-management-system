@@ -1,3 +1,4 @@
+
 @extends('layouts.main')
 @section('content')
     <div id="main" role="main">
@@ -33,12 +34,13 @@
                                 <th data-hide="phone">ID</th>
                                 <th data-class="expand"><i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Name</th>
                                 <th>Gender</th>
-                                <th>Date_Of_Birth</th>
-                                <th>Place_Of_Birth</th>
+                                <th>Date Of Birth</th>
+                                <th>Place Of Birth</th>
                                 <th data-hide="phone,tablet">Image</th>
                                 <th data-hide="phone,tablet">Status</th>
-                                <th>Payment_ID</th>
-                                <th>User_ID</th>
+                                <th>Payment ID</th>
+                                <th>User ID</th>
+                                <th>Created At</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -50,11 +52,8 @@
                                     <td>{{$student->date_of_birth}}</td>
                                     <td>{{$student->place_of_birth}}</td>
                                     <td>{{$student->image}}</td>
-                                    <td>{{$student->status}}</td>
-                                    <td>{{$student->payment_id}}</td>
-                                    <td>{{$student->user_id}}</td>
                                     <td>
-                                        @if ($student->is_active)
+                                        @if ($student->status)
                                             <label class="badge badge-info" style="background-color:#196eec">
                                                 active
                                             </label>
@@ -64,6 +63,8 @@
                                             </label>
                                         @endif
                                     </td>
+                                    <td>{{$student->payment_id}}</td>
+                                    <td>{{$student->user_id}}</td>
                                     <td>{{$student->created_at}}</td>
                                 </tr>
                             @endforeach
