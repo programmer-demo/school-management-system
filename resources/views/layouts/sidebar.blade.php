@@ -40,6 +40,12 @@
                     <span class="menu-item-parent">Students</span>
                 </a>
             </li>
+            <li class="">
+                <a href="#" title="">
+                    <i class="fa fa-lg fa-fw fa-male"></i>
+                    <span class="menu-item-parent">Subjects</span>
+                </a>
+            </li>
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">Payment</span></a>
                 <ul>
@@ -63,6 +69,9 @@
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-gear"></i> <span class="menu-item-parent">Set Up</span></a>
                 <ul>
+                    <li>
+                        <a href="#">Class Room</a>
+                    </li>
                     <li>
                         <a href="{{route('settings.index')}}">Settings</a>
                     </li>
