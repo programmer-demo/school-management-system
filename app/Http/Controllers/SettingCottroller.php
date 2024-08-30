@@ -2,18 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Student;
 use Illuminate\Http\Request;
 
-class StudentController extends Controller
+class SettingCottroller extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $students = Student::get();
-        return view('students.index' , compact('students'));
+        return view('settings.index');
     }
 
     /**

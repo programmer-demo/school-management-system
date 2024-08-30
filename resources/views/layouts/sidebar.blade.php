@@ -35,10 +35,21 @@
                 </ul>
             </li>
             <li class="">
-                <a href="" title="">
+                <a href="{{route('student.index')}}" title="">
                     <i class="fa fa-lg fa-fw fa-female"></i>
                     <span class="menu-item-parent">Students</span>
                 </a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">Payment</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Payment</a>
+                    </li>
+                    <li>
+                        <a href="#">Payment Detail</a>
+                    </li>
+                </ul>
             </li>
 {{--            <li>--}}
 {{--                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">Report</span></a>--}}
@@ -48,17 +59,21 @@
 {{--                    </li>--}}
 {{--                </ul>--}}
 {{--            </li>--}}
+
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-gear"></i> <span class="menu-item-parent">Set Up</span></a>
                 <ul>
                     <li>
-                        <a href="#">Settings</a>
+                        <a href="{{route('settings.index')}}">Settings</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-user"></i> <span class="menu-item-parent">User Profile</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-user"></i> <span class="menu-item-parent">User List</span></a>
                 <ul>
+                    <li>
+                        <a href="#">Role</a>
+                    </li>
                     <li>
                         <a href="{{route('user.index')}}">User</a>
                     </li>
@@ -94,6 +109,8 @@
 {{--                    <li><a href="orders.html">Orders</a></li>--}}
 {{--                </ul>--}}
 {{--            </li>--}}
+
+
         </ul>
     </nav>
 
