@@ -12,17 +12,12 @@ class UserProfileController extends Controller
      */
     public function index()
     {
-        return view('userprofiles.index');
+        return view('userProfiles.index');
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function login()
     {
-        //
+        return view('loginAccounts.create');
     }
-
     /**
      * Store a newly created resource in storage.
      */

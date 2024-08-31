@@ -13,5 +13,5 @@ Route::get('/index', function(){
 Route::resource('user' , UserController::class);
 Route::get('students', [StudentController::class,'index'])->name('student.index');
 Route::get('settings', [SettingCottroller::class,'index'])->name('settings.index');
-Route::get('userprofile',[UserProfileController::class,'index'])->name('userprofile.index');
-
+Route::get('userProfile/index',[UserProfileController::class,'index'])->name('userProfile.index');
+Route::get('userLogin/index',[UserProfileController::class,'login'])->name('userLogin.index');

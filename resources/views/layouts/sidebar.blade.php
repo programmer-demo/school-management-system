@@ -1,3 +1,4 @@
+
 <!-- Note: This width of the aside area can be adjusted through LESS variables -->
 <aside id="left-panel">
 
@@ -27,12 +28,7 @@
 
         <ul>
             <li class="">
-                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
-                <ul>
-                    <li class="">
-                        <a href="{{route('index')}}" title="Dashboard"><span class="menu-item-parent">Analytics Dashboard</span></a>
-                    </li>
-                </ul>
+                <a href="{{route('index')}}" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
             </li>
             <li class="">
                 <a href="{{route('student.index')}}" title="">
@@ -42,7 +38,7 @@
             </li>
             <li class="">
                 <a href="#" title="">
-                    <i class="fa fa-lg fa-fw fa-male"></i>
+                    <i class="fa fa-lg fa-fw fa-book"></i>
                     <span class="menu-item-parent">Subjects</span>
                 </a>
             </li>
