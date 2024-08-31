@@ -43,9 +43,8 @@
             </li>
             <li class="">
                 <a href="#" title="">
-                    <i class="fa fa-lg fa-fw fa-male"></i>
-                
-                    
+                    {{-- <i class="fa fa-lg fa-fw fa-male"></i> --}}
+                    <img src="https://cdn-icons-png.flaticon.com/128/3330/3330314.png" alt="Subject"  style="height:20px; margin:0px 7px 7px 3px ;">
                     <span class="menu-item-parent">Subjects</span>
                 </a>
             </li>
