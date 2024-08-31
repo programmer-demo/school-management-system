@@ -1,22 +1,30 @@
 <style>
     #task-bar-search{
+        background-color: red;
         display: flex;
         flex-wrap: wrap;
-        align-items: stretch;
+        align-items: center;
         gap: 0.5rem;
         width: 100%;
+        height: 50px;
     }
     #btn{
-        background-color: yellow;
-        margin-left: 60%;    
+        margin-left: 50%;    
         transition: all .2s ease;  
+    }
+    #search{
+        background-color: blue;
+        width: 30%;
     }
     #icon-search{
         width: 3%;
-    }
-    #input-search{
-        width: 30%;
-        height: 34spx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-justify: center;
+        margin-left: 7px;
+
     }
     #btn:hover{
         box-shadow: 0px 0px 8px 2px rgb(86, 171, 127);
@@ -43,16 +51,20 @@
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
 
             <div class="row">
-                <div id="task-bar-search" class=" col-xs-12 col-sm-6  " style="padding-bottom: 5px; ">
-                        <span class="input-group-addon" id="icon-search" >
-                             <i class="glyphicon glyphicon-search"></i>
-                        </span>
-                        <input type="text" clcass="form-control" placeholder="search" id="input-search">
-                        {{-- create button --}}
-                        <span id="btn" class="">
-                            <button type="button" class="btn btn-success">Add</button>
-                        </span>
+                {{-- ==========================================New taskbar========================================== --}}
+                <div id="task-bar-search">
+                    <span  id="icon-search" >
+                         <i class="glyphicon glyphicon-search" style="height: 80%; width:100%; font-size:35px;"></i>
+                    </span>
+                    <span id="search">
+                        <input type="text" placeholder="search" id="input-search" style="height: 80%; width:100%;">
+                    </span>
+                    {{-- create button --}}
+                    <span id="btn" >
+                        <button type="button" class="btn btn-success" style="height:80%; width:100%;">Add</button>
+                    </span>
                 </div>
+
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="table-responsive card card-body">
                         <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
