@@ -1,3 +1,4 @@
+
 <!-- Note: This width of the aside area can be adjusted through LESS variables -->
 <aside id="left-panel">
 
@@ -43,6 +44,8 @@
             <li class="">
                 <a href="#" title="">
                     <i class="fa fa-lg fa-fw fa-male"></i>
+                
+                    
                     <span class="menu-item-parent">Subjects</span>
                 </a>
             </li>
