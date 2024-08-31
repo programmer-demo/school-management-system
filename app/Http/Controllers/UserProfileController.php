@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
 use App\Http\Controllers\Controller;
-=======
->>>>>>> 270ba71097d5024310ebd362e8969dd770425bea
 use Illuminate\Http\Request;
 
 class UserProfileController extends Controller
 {
-<<<<<<< HEAD
     /**
      * Display a listing of the resource.
      */
@@ -64,10 +60,9 @@ class UserProfileController extends Controller
      */
     public function destroy(string $id)
     {
-        //
-=======
+
+    }
     public function userProfile(){
         return view("userProfiles.index");
->>>>>>> 270ba71097d5024310ebd362e8969dd770425bea
     }
 }
