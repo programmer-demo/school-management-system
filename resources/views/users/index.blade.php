@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <style>
     #task-bar-search{
         background-color: red;
@@ -32,6 +33,9 @@
     }
 </style>
 {{-- ======================================================================================= --}}
+=======
+
+>>>>>>> 8097a2849fa4c0aa58de195528ccc759f2d4d3ed
 @extends('layouts.main')
 @section('content')
     <div id="main" role="main">
@@ -51,6 +55,7 @@
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
 
             <div class="row">
+<<<<<<< HEAD
                 {{-- ==========================================New taskbar========================================== --}}
                 <div id="task-bar-search">
                     <span  id="icon-search" >
@@ -63,6 +68,23 @@
                     <span id="btn" >
                         <button type="button" class="btn btn-success" style="height:80%; width:100%;">Add</button>
                     </span>
+=======
+                <div id="task-bar-search" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 5px;">
+                    <div class="" style="display: flex;justify-content:space-between;align-item:center;width:100% !importent">
+                        <div class="col-8" style="display:flex">
+                            <span class="input-group-addon" id="icon-search" style="width: 50px">
+                                <i class="glyphicon glyphicon-search"></i>
+                           </span>
+                           <input type="text" class="form-control" placeholder="search" id="input-search" style="width: 100% !importent">
+                        </div>
+                        <div class="col-4">
+                                {{--  create button --}}
+                            <span id="btn" class="">
+                                <button type="button" class="btn btn-success">Add</button>
+                            </span>
+                        </div>
+                    </div>
+>>>>>>> 8097a2849fa4c0aa58de195528ccc759f2d4d3ed
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
