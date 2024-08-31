@@ -5,12 +5,11 @@
         align-items: stretch;
         gap: 0.5rem;
         width: 100%;
-
     }
     #btn{
         background-color: yellow;
-        margin-left: 60%;
-        
+        margin-left: 60%;    
+        transition: all .2s ease;  
     }
     #icon-search{
         width: 3%;
@@ -18,6 +17,10 @@
     #input-search{
         width: 30%;
         height: 34spx;
+    }
+    #btn:hover{
+        box-shadow: 0px 0px 8px 2px rgb(86, 171, 127);
+    
     }
 </style>
 {{-- ======================================================================================= --}}
