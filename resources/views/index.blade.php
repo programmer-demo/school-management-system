@@ -14,8 +14,8 @@
 
             <!-- breadcrumb -->
             <ol class="breadcrumb">
-                <li>Home</li><li>Dashboard</li> <li><a href="{{ route('userLogin.index') }}">Go to login</a></li>
-            </ol> 
+                <li>Home</li><li>Dashboard</li>
+            </ol>
             <!-- end breadcrumb -->
 
             <!-- You can also add more buttons to the

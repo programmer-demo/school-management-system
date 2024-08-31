@@ -83,7 +83,7 @@ body
 		transform: rotate(0deg);
 	}
 }
-.login 
+.login
 {
 	position: absolute;
 	width: 300px;
@@ -94,17 +94,17 @@ body
 	flex-direction: column;
 	gap: 20px;
 }
-.login h2 
+.login h2
 {
 	font-size: 2em;
 	color: #fff;
 }
-.login .inputBx 
+.login .inputBx
 {
 	position: relative;
 	width: 100%;
 }
-.login .inputBx input 
+.login .inputBx input
 {
 	position: relative;
 	width: 100%;
@@ -125,7 +125,7 @@ body
 	border: none;
 	cursor: pointer;
 }
-.login .inputBx input::placeholder 
+.login .inputBx input::placeholder
 {
 	color: rgba(255,255,255,0.75);
 }
@@ -138,7 +138,7 @@ body
 	justify-content: space-between;
 	padding: 0 20px;
 }
-.login .links a 
+.login .links a
 {
 	color: #fff;
 	text-decoration: none;
@@ -163,7 +163,7 @@ body
 			</div>
 			<div class="links">
 				<a href="#">Forget Password</a>
-				<a href="#">Signup</a>
+				{{--  <a href="#">Signup</a>  --}}
 			</div>
 		</div>
 	</div>

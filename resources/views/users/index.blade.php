@@ -11,7 +11,7 @@
 				</span>
 
             <ol class="breadcrumb">
-                <li>Home</li><li>User</li><li><a href="{{ route('userLogin.index') }}">Go to login</a></li>
+                <li>Home</li><li>User</li>
             </ol>
         </div>
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
