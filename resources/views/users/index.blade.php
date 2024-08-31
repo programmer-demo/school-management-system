@@ -1,4 +1,29 @@
-
+<style>
+    #task-bar-search{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    #btn{
+        background-color: yellow;
+        margin-left: 60%;    
+        transition: all .2s ease;  
+    }
+    #icon-search{
+        width: 3%;
+    }
+    #input-search{
+        width: 30%;
+        height: 34spx;
+    }
+    #btn:hover{
+        box-shadow: 0px 0px 8px 2px rgb(86, 171, 127);
+    
+    }
+</style>
+{{-- ======================================================================================= --}}
 @extends('layouts.main')
 @section('content')
     <div id="main" role="main">
@@ -18,17 +43,15 @@
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
 
             <div class="row">
-                <div class="col-xs-12 col-sm-6  " style="padding-bottom: 5px; ">
-                    <label class="" style="display: flex;">
-                        <span class="input-group-addon" style="width: 10%">
+                <div id="task-bar-search" class=" col-xs-12 col-sm-6  " style="padding-bottom: 5px; ">
+                        <span class="input-group-addon" id="icon-search" >
                              <i class="glyphicon glyphicon-search"></i>
                         </span>
-                        <input type="text" clcass="form-control" placeholder="search" style="width: 40%">
+                        <input type="text" clcass="form-control" placeholder="search" id="input-search">
                         {{-- create button --}}
-                        <span class="" style="position: absolute; margin-left:170vh; display:flex; flex-wrap:wrap;">
+                        <span id="btn" class="">
                             <button type="button" class="btn btn-success">Add</button>
                         </span>
-                    </label>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="table-responsive card card-body">
