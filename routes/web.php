@@ -13,7 +13,4 @@ Route::get('/index', function(){
 Route::resource('user' , UserController::class);
 Route::get('students', [StudentController::class,'index'])->name('student.index');
 Route::get('settings', [SettingCottroller::class,'index'])->name('settings.index');
-Route::get('userprofile',[UserProfileController::class,'index'])->name('userprofile.index');
-
-//My name is Khat luch.I maked link user to profile.
-route::get( 'LinkUserProfile', [UserProfileController::class,'LinkUserProfile'])->name('LinkUserProfile');  
+Route::get('userProfile/index',[UserProfileController::class,'index'])->name('userProfile.index');

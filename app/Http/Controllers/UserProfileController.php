@@ -12,14 +12,6 @@ class UserProfileController extends Controller
      */
     public function index()
     {
-        return view('userprofiles.index');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function LinkUserProfile()
-    {
         return view('userProfiles.index');
     }
 
@@ -61,8 +53,5 @@ class UserProfileController extends Controller
     public function destroy(string $id)
     {
 
-    }
-    public function userProfile(){
-        return view("userProfiles.index");
     }
 }
