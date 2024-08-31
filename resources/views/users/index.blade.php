@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-<style>
-    #task-bar-search{
-        background-color: red;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 0.5rem;
-        width: 100%;
-        height: 50px;
-    }
-    #btn{
-        margin-left: 50%;    
-        transition: all .2s ease;  
-    }
-    #search{
-        background-color: blue;
-        width: 30%;
-    }
-    #icon-search{
-        width: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        text-justify: center;
-        margin-left: 7px;
-
-    }
-    #btn:hover{
-        box-shadow: 0px 0px 8px 2px rgb(86, 171, 127);
-    
-    }
-</style>
-{{-- ======================================================================================= --}}
-=======
-
->>>>>>> 8097a2849fa4c0aa58de195528ccc759f2d4d3ed
 @extends('layouts.main')
 @section('content')
     <div id="main" role="main">
@@ -55,20 +17,6 @@
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
 
             <div class="row">
-<<<<<<< HEAD
-                {{-- ==========================================New taskbar========================================== --}}
-                <div id="task-bar-search">
-                    <span  id="icon-search" >
-                         <i class="glyphicon glyphicon-search" style="height: 80%; width:100%; font-size:35px;"></i>
-                    </span>
-                    <span id="search">
-                        <input type="text" placeholder="search" id="input-search" style="height: 80%; width:100%;">
-                    </span>
-                    {{-- create button --}}
-                    <span id="btn" >
-                        <button type="button" class="btn btn-success" style="height:80%; width:100%;">Add</button>
-                    </span>
-=======
                 <div id="task-bar-search" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 5px;">
                     <div class="" style="display: flex;justify-content:space-between;align-item:center;width:100% !importent">
                         <div class="col-8" style="display:flex">
@@ -84,7 +32,6 @@
                             </span>
                         </div>
                     </div>
->>>>>>> 8097a2849fa4c0aa58de195528ccc759f2d4d3ed
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
