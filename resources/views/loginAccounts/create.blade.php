@@ -1,62 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Animated Login Page</title>
 </head>
-<body>
-    
+<style>
 
-    <form>
-        <div class="grid gap-6 mb-6 md:grid-cols-2">
-            <div>
-                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
-            </div>
-            <div>
-                <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-                <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required />
-            </div>
-            <div>
-                <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company</label>
-                <input type="text" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required />
-            </div>  
-            <div>
-                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
-                <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
-            </div>
-            <div>
-                <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website URL</label>
-                <input type="url" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required />
-            </div>
-            <div>
-                <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique visitors (per month)</label>
-                <input type="number" id="visitors" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
-            </div>
-        </div>
-        <div class="mb-6">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
-        </div> 
-        <div class="mb-6">
-            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-            <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
-        </div> 
-        <div class="mb-6">
-            <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
-            <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
-        </div> 
-        <div class="flex items-start mb-6">
-            <div class="flex items-center h-5">
-            <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
-            </div>
-            <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
-        </div>
-        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-    </form>
-    
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #111;
+}
+.square
+{
+	position: relative;
+	width: 500px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.square i
+{
+	position: absolute;
+	inset: 0;
+	border: 2px solid #fff;
+	transition: 0.5s;
+}
+.square i:nth-child(1)
+{
+	border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+	animation: animate 6s linear infinite;
+}
+.square i:nth-child(2)
+{
+	border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+	animation: animate 4s linear infinite;
+}
+.square i:nth-child(3)
+{
+	border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+	animation: animate2 10s linear infinite;
+}
+.square:hover i
+{
+	border: 6px solid var(--clr);
+	filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+@keyframes animate2
+{
+	0%
+	{
+		transform: rotate(360deg);
+	}
+	100%
+	{
+		transform: rotate(0deg);
+	}
+}
+.login 
+{
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+.login h2 
+{
+	font-size: 2em;
+	color: #fff;
+}
+.login .inputBx 
+{
+	position: relative;
+	width: 100%;
+}
+.login .inputBx input 
+{
+	position: relative;
+	width: 100%;
+	padding: 12px 20px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	font-size: 1.2em;
+	color: #fff;
+	box-shadow: none;
+	outline: none;
+}
+.login .inputBx input[type="submit"]
+{
+	width: 100%;
+	background: #0078ff;
+	background: linear-gradient(45deg,#ff357a,#fff172);
+	border: none;
+	cursor: pointer;
+}
+.login .inputBx input::placeholder 
+{
+	color: rgba(255,255,255,0.75);
+}
+.login .links
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+.login .links a 
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+</style>
+<body>
+	<div class="square">
+		<i style="--clr:#00ff0a;"></i>
+		<i style="--clr:#ff0057;"></i>
+		<i style="--clr:#fffd44;"></i>
+		<div class="login">
+			<h2>Login</h2>
+			<div class="inputBx">
+				<input type="text" placeholder="Username">
+			</div>
+			<div class="inputBx">
+				<input type="password" placeholder="Password">
+			</div>
+			<div class="inputBx">
+				<input type="submit" value="Sign in">
+			</div>
+			<div class="links">
+				<a href="#">Forget Password</a>
+				<a href="#">Signup</a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
