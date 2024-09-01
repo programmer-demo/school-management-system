@@ -52,7 +52,7 @@
                     <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span> 13</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span> 37</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong>Followers</strong></span> 78</li>
-                
+
 
                 <div class="panel panel-default">
                     <div class="panel-heading">Social Media</div>

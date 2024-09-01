@@ -10,6 +10,9 @@
 						<img src="" alt="me" class="online" />
 						<span>
 							john.doe
+                            @auth
+                                {{ Auth::user()->name }}
+                            @endauth
 						</span>
 						<i class="fa fa-angle-down"></i>
 					</a>
