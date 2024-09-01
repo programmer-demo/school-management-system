@@ -17,7 +17,7 @@ Route::group(['middleware' => ['auth']] , function (){
     Route::resource('user' , UserController::class);
     Route::get('students', [StudentController::class,'index'])->name('student.index');
     Route::get('settings', [SettingCottroller::class,'index'])->name('settings.index');
-    Route::get('userProfile/index',[UserProfileController::class,'index'])->name('userProfile.index');
+    Route::get('userProfiles',[UserProfileController::class,'index'])->name('userProfile.index');
 });
 
 Auth::routes();

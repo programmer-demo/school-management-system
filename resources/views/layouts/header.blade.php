@@ -1,11 +1,10 @@
 <!-- HEADER -->
 <header id="header">
-    <div id="logo-group">
+    <div id="logo-group" style="display: flex;">
 
         <!-- PLACE YOUR LOGO HERE -->
-        <!-- <span id="logo"> <img src="" alt=""> </span> -->
+        <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="{{ asset('logo/logo.jpg') }}" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span>
         <!-- END LOGO PLACEHOLDER -->
-
         <!-- Note: The activity badge color changes when clicked and resets the number to 0
         Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
         <span id="activity" class="activity-dropdown" style="margin-left: 20px;"> <i class="fa fa-user"></i> <b class="badge"> 21 </b> </span>
