@@ -60,6 +60,7 @@ class LoginController extends Controller
         ])->onlyInput('phone');
     }
     public function logout(Request $request){
-dd('x');
+        Auth::logout();
+        return redirect()->route('login');
     }
 }

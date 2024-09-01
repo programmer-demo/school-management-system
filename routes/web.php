@@ -11,16 +11,13 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group(['middleware' => ['auth']] , function (){
-    Route::get('/index', function(){
+    Route::get('/', function(){
         return view('index');
-    })->name('index');
+    })->name('/');
     Route::resource('user' , UserController::class);
     Route::get('students', [StudentController::class,'index'])->name('student.index');
     Route::get('settings', [SettingCottroller::class,'index'])->name('settings.index');
     Route::get('userProfile/index',[UserProfileController::class,'index'])->name('userProfile.index');
-    Route::get('userLogin/index',[UserProfileController::class,'login'])->name('userLogin.index');
 });
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
