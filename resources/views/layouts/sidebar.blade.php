@@ -7,9 +7,8 @@
 				<span> <!-- User image size is adjusted inside CSS, it should stay as it -->
 
 					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
-						<img src="" alt="me" class="online" />
+						<img src="{{asset('logo/logo.jpg')}}" alt="me" class="online" />
 						<span>
-							john.doe
                             @auth
                                 {{ Auth::user()->name }}
                             @endauth
