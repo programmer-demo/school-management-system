@@ -4,8 +4,9 @@
 
         <!-- PLACE YOUR LOGO HERE -->
         {{-- <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="{{ asset('logo/logo.jpg') }}" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span> --}}
+        <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="{{ asset('logo/logo(SMS).jpg') }}" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span>
        
-        <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="https://p7.hiclipart.com/preview/1008/987/663/school-information-management-system-education-student-management.jpg" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span>
+        {{-- <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="https://p7.hiclipart.com/preview/1008/987/663/school-information-management-system-education-student-management.jpg" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span> --}}
        
         <!-- END LOGO PLACEHOLDER -->
         <!-- Note: The activity badge color changes when clicked and resets the number to 0
