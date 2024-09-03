@@ -22,7 +22,7 @@ body
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 90vh;
+	min-height: 80vh;
 	background: #111;
 }
 .square
