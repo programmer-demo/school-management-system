@@ -68,7 +68,7 @@
                 <a href="#"><i class="fa fa-lg fa-fw fa-gear"></i> <span class="menu-item-parent">Set Up</span></a>
                 <ul>
                     <li>
-                        <a href="#">Class Room</a>
+                        <a href="{{route('classrooms.index')}}">Class Room</a>
                     </li>
                     <li>
                         <a href="{{route('settings.index')}}">Settings</a>
