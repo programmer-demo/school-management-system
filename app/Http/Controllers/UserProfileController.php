@@ -14,10 +14,6 @@ class UserProfileController extends Controller
     {
         return view('userProfiles.index');
     }
-    public function login()
-    {
-        return view('loginAccounts.create');
-    }
     /**
      * Store a newly created resource in storage.
      */
