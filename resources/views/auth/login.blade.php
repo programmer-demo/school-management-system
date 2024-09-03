@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>Animated Login Page</title>
+	<title>Login</title>
 </head>
 <style>
 
@@ -22,7 +22,7 @@ body
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 90vh;
 	background: #111;
 }
 .square
@@ -147,26 +147,45 @@ body
 
 </style>
 <body>
+
+		<form action="{{ route('login') }}" method="POST">
+            @csrf
 	<div class="square">
 		<i style="--clr:#00ff0a;"></i>
 		<i style="--clr:#ff0057;"></i>
 		<i style="--clr:#fffd44;"></i>
-		<div class="login">
-			<h2>Login</h2>
-			<div class="inputBx">
-				<input type="text" placeholder="Username">
-			</div>
-			<div class="inputBx">
-				<input type="password" placeholder="Password">
-			</div>
-			<div class="inputBx">
-				<input type="submit" value="Sign in">
-			</div>
-			<div class="links">
-				<a href="#">Forget Password</a>
-				{{--  <a href="#">Signup</a>  --}}
-			</div>
-		</div>
+            <div class="login">
+                <h2>Login</h2>
+                <div class="inputBx">
+                    <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" placeholder="Phone Number"
+                     name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus>
+
+                    @error('phone')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+                <div class="inputBx">
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password"
+                    name="password" required autocomplete="current-password">
+
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Sign in">
+                </div>
+                <div class="links">
+                    <a href="#">Forget Password</a>
+                    {{--  <a href="#">Signup</a>  --}}
+                </div>
+            </div>
 	</div>
+        </form>
 </body>
 </html>
+

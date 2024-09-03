@@ -10,6 +10,9 @@
 						<img src="" alt="me" class="online" />
 						<span>
 							john.doe
+                            @auth
+                                {{ Auth::user()->name }}
+                            @endauth
 						</span>
 						<i class="fa fa-angle-down"></i>
 					</a>
@@ -28,7 +31,7 @@
 
         <ul>
             <li class="">
-                <a href="{{route('index')}}" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
+                <a href="{{route('/')}}" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
             </li>
             <li class="">
                 <a href="{{route('student.index')}}" title="">
