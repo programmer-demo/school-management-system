@@ -3,11 +3,11 @@
 <aside id="left-panel">
 
     <!-- User info -->
-    <div class="login-info">
+    <div class="login-info"  >
 				<span> <!-- User image size is adjusted inside CSS, it should stay as it -->
 
 					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
-						<img src="{{asset('logo/logo.jpg')}}" alt="me" class="online" />
+						<img src="{{asset('logo/logo(SMS).jpg')}}" alt="me" class="online" />
 						<span>
                             @auth
                                 {{ Auth::user()->name }}
@@ -21,7 +21,7 @@
     <!-- end user info -->
 
     <!-- NAVIGATION : This navigation is also responsive-->
-    <nav>
+    <nav >
         <!--
         NOTE: Notice the gaps after each icon usage <i></i>..
         Please note that these links work a bit different than
