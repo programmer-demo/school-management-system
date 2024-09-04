@@ -23,7 +23,7 @@
                         <span class="input-group-addon" style="width: 5%">
                              <i class="glyphicon glyphicon-search"></i>
                         </span>
-                        <input type="text" class="form-control" placeholder="search" style="width: 40%">
+                        <input type="text" class="form-control" placeholder="search" style="width: 18%">
                         {{-- create button --}}
                         <button type="button" class="btn btn-success" style="margin-left: 50%;">Add</button>
                     </label>
