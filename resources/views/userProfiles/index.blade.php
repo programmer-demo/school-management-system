@@ -12,7 +12,7 @@
 
             <!-- breadcrumb -->
             <ol class="breadcrumb">
-                <li>Home</li><li>User Profile</li>
+                <li>Dashboard</li><li>User Profile</li>
             </ol>
             <!-- end breadcrumb -->
 

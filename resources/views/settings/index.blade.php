@@ -8,7 +8,7 @@
                 </span>
             </span>
             <ol class="breadcrumb">
-                <li>Home</li><li>Settings</li>
+                <li>Dashboard</li><li>Settings</li>
             </ol>
         </div>
         <div class="" style="margin-top:20px !important;width: 100%;display: flex !important;justify-content: center !important;align-items: center !important;">

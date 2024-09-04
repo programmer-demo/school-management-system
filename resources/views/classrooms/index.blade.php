@@ -12,22 +12,29 @@
 				</span>
 
             <ol class="breadcrumb">
-                <li>Home</li><li>ClassRoom</li>
+                <li>Dashboard</li><li>ClassRoom</li>
             </ol>
         </div>
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
 
             <div class="row">
-                <div class="col-xs-12 col-sm-6" style="padding-bottom: 5px; width:100%;">
-                    <label class="" style="display: flex; width:100%;">
-                        <span class="input-group-addon" style="width: 5%">
-                             <i class="glyphicon glyphicon-search"></i>
-                        </span>
-                        <input type="text" class="form-control" placeholder="search" style="width: 18%">
-                        {{-- create button --}}
-                        <button type="button" class="btn btn-success" style="margin-left: 50%;">Add</button>
-                    </label>
+                <div id="task-bar-search" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 5px;">
+                    <div class="" style="display: flex;justify-content:space-between;align-item:center;width:100% !importent">
+                        <div class="col-8" style="display:flex">
+                            <span class="input-group-addon" id="icon-search" style="width: 50px">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="search" id="input-search" style="width: 100% !importent">
+                        </div>
+                         <div class="col-4">
+                        {{--  create button --}}
+                            <span id="btn" class="">
+                                <button type="button" class="btn btn-success">Add</button>
+                            </span>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="table-responsive card card-body">
                         <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
