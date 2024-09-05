@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ClassRoomController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\SettingCottroller;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\UserController;
@@ -16,6 +17,7 @@ Route::group(['middleware' => ['auth']] , function (){
         return view('index');
     })->name('/');
     Route::resource('user' , UserController::class);
+    Route::resource('customer' , CustomerController::class);
     Route::get('students', [StudentController::class,'index'])->name('student.index');
     Route::get('settings', [SettingCottroller::class,'index'])->name('settings.index');
     Route::get('userProfiles',[UserProfileController::class,'index'])->name('userProfile.index');

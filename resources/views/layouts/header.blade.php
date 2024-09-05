@@ -5,9 +5,9 @@
         <!-- PLACE YOUR LOGO HERE -->
         {{-- <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="{{ asset('logo/logo.jpg') }}" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span> --}}
         <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="{{ asset('logo/logo(SMS).jpg') }}" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span>
-       
+
         {{-- <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="https://p7.hiclipart.com/preview/1008/987/663/school-information-management-system-education-student-management.jpg" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span> --}}
-       
+
         <!-- END LOGO PLACEHOLDER -->
         <!-- Note: The activity badge color changes when clicked and resets the number to 0
         Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
@@ -17,28 +17,90 @@
         <div class="ajax-dropdown">
 
             <!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
-            <div class="btn-group btn-group-justified" data-toggle="buttons">
-                <label class="btn btn-default">
-                    <input type="radio" name="activity" id="ajax/notify/mail.html">
-                    Msgs (14) </label>
-                <label class="btn btn-default">
-                    <input type="radio" name="activity" id="ajax/notify/notifications.html">
-                    notify (3) </label>
-                <label class="btn btn-default">
-                    <input type="radio" name="activity" id="ajax/notify/tasks.html">
-                    Tasks (4) </label>
+            <div class="btn-group btn-group-justified" data-toggle="buttons" id="myTab" style="display: flex;justify-content: space-between;align-items: center">
+{{--                <ul id="myTab" class="nav nav-tabs" style="min-height: 10px !important;">--}}
+{{--                    <li class="active"><a href="#home" data-toggle="tab">Msgs (14)</a></li>--}}
+{{--                    <li class=""><a href="#profile" data-toggle="tab">Notify (3)</a></li>--}}
+{{--                </ul>--}}
+                <div style="width: 46% !important;">
+                    <a href="#home" data-toggle="tab" onclick="Msgs()">
+                        <label class="btn btn-default active" id="msgs" style="width: 90%">
+                            Msgs (14)
+                        </label>
+                    </a>
+                </div>
+                <div style="width: 48% !important;">
+                    <a href="#profile" data-toggle="tab" onclick="Notify()">
+                        <label class="btn btn-default" id="notify" style="width: 80%">
+                            notify (3)
+                        </label>
+                    </a>
+                </div>
+                <script>
+                    $("#msgs").click(function(){
+                        $("#msgs").addClass("active");
+                        $("#notify").removeClass("active");
+                    });
+                    $("#notify").click(function(){
+                        $("#notify").addClass("active");
+                        $("#msgs").removeClass("active");
+                    });
+                </script>
+                {{--                <label class="btn btn-default">--}}
+{{--                    <input type="radio" name="activity" id="ajax/notify/tasks.html">--}}
+{{--                    Tasks (4) </label>--}}
             </div>
 
             <!-- notification content -->
             <div class="ajax-notifications custom-scroll">
 
-                <div class="alert alert-transparent">
-                    <h4>Click a button to show messages here</h4>
-                    This blank page message helps protect your privacy, or you can show the first message here automatically.
+{{--                <div class="alert alert-transparent">--}}
+{{--                    <h4>Click a button to show messages here</h4>--}}
+{{--                    This blank page message helps protect your privacy, or you can show the first message here automatically.--}}
+{{--                </div>--}}
+
+{{--                <i class="fa fa-lock fa-4x fa-border"></i>--}}
+
+                <div id="myTabContent" class="tab-content" style="width: 90%;margin: auto;">
+                    <div class="tab-pane active in" id="home">
+                        <div class="row" style="width: 100%">
+
+                            <div class="col-md-12 col-lg-12 col-xl-12">
+
+                                <h5 class="font-weight-bold mb-3 text-center text-lg-start" style="font-weight: bold">Member</h5>
+
+                                <div class="card" id="html">
+{{--                                    <div class="card-body">--}}
+
+{{--                                        <div class="list-unstyled mb-0">--}}
+{{--                                            <div class="p-2 border-bottom bg-body-tertiary">--}}
+{{--                                                <a href="#home" data-toggle="tab" class="" style="display: flex;justify-content: space-between;align-items: center;">--}}
+{{--                                                    <div class="d-flex flex-row" style="display: flex;justify-content: space-between;align-items: center">--}}
+{{--                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-8.webp" alt="avatar"--}}
+{{--                                                             class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60" style="border-radius: 50%">--}}
+{{--                                                        <div class="pt-1" style="padding-left: 10px">--}}
+{{--                                                            <p class="fw-bold mb-0">John Doe</p>--}}
+{{--                                                            <p class="small text-muted">Hello, Are you there?</p>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                    <div class="pt-1">--}}
+{{--                                                        <p class="small text-muted mb-1">Just now</p>--}}
+{{--                                                        <span class="badge bg-danger float-end" style="background-color: red">1</span>--}}
+{{--                                                    </div>--}}
+{{--                                                </a>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+
+{{--                                    </div>--}}
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        profile tab!
+                    </div>
                 </div>
-
-                <i class="fa fa-lock fa-4x fa-border"></i>
-
             </div>
             <!-- end notification content -->
 
@@ -214,6 +276,98 @@
 
     </div>
     <!-- end pulled right: nav area -->
+    <script>
+        $.ajax({
+            url: "https://api.telegram.org/bot7018883218:AAEUBrtKS1YGgPqliKbHqEfhN5jneK4CG7g/getupdates",
+            cache: false,
+            success: function (response) {
 
+                response['result'].forEach(element => {
+                    var chat_id = element['message']['chat']['id'];
+                    var text = element['message']['text'];
+                    var fullName = element['message']['chat']['first_name'] + ' ' + element['message']['chat']['last_name'];
+                    var first_name = element['message']['chat']['first_name'];
+                    var last_name = element['message']['chat']['last_name'];
+
+                    if(chat_id === chat_id){
+                        localStorage.setItem('chat_id' , chat_id);
+                    }
+                    localStorage.setItem('text' , text);
+                    localStorage.setItem('fullName' , fullName);
+                    localStorage.setItem('first_name' , first_name);
+                    localStorage.setItem('last_name' , last_name);
+
+                    // console.log(fullName)
+                    // console.log(chat_id)
+                })
+                var form = new FormData();
+
+                // form.append("image", fileInput.files[0], "/C:/Users/programmer/Desktop/1677655912700.png");
+
+                // form.append("image", $('#notification')[0].files[0]);
+                form.append("text", localStorage.getItem('text'));
+                form.append("chat_id", localStorage.getItem('chat_id'));
+                form.append("fullName", localStorage.getItem('fullName'));
+                form.append("first_name", localStorage.getItem('first_name'));
+                form.append("last_name", localStorage.getItem('last_name'));
+                form.append("_token", "{{ csrf_token() }}");
+
+                $.ajax({
+                    // url: "https://api.telegram.org/bot7018883218:AAEUBrtKS1YGgPqliKbHqEfhN5jneK4CG7g/sendMessage?chat_id=" + chat_id + '&text=' + text,
+                    url: "{{route('customer.store')}}",
+                    // "url": "http://127.0.0.1:8000/api/product/store",
+                    "method": "POST",
+                    headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                    "timeout": 0,
+                    "processData": false,
+                    "mimeType": "multipart/form-data",
+                    "contentType": false,
+                    data:form,
+                    success: function (response) {
+                        response = JSON.parse(response)
+                        var html = '';
+                        var res = response['customer'];
+                        for(var i = 0;i<res.length;i++){
+                            console.log(res[i].fullName);
+                            html += `
+                                        <div class="card-body">
+
+                                        <div class="list-unstyled mb-0">
+                                            <div class="p-2 border-bottom bg-body-tertiary">
+                                                <a href="#home" data-toggle="tab" class="" style="display: flex;justify-content: space-between;align-items: center;">
+                                                    <div class="d-flex flex-row" style="display: flex;justify-content: space-between;align-items: center">
+                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-8.webp" alt="avatar"
+                                                             class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60" style="border-radius: 50%">
+                                                        <div class="pt-1" style="padding-left: 10px">
+                                                            <p class="fw-bold mb-0">` + res[i].fullName + `</p>
+                                                            <p class="small text-muted">` + res[i].text + `</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pt-1">
+                                                        <p class="small text-muted mb-1">Just now</p>
+                                                        <span class="badge bg-danger float-end" style="background-color: red">1</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    `
+                        }
+
+                        $('#html').append(html);
+
+                        // response.forEach(res => {
+                        //     console.log(res);
+                        // })
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        console.log(textStatus, errorThrown);
+                    }
+                });
+            }
+        });
+    </script>
 </header>
 <!-- END HEADER -->

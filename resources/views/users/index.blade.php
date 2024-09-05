@@ -45,7 +45,7 @@
                                 <th><i class="bi bi-gender-ambiguous"></i> Gender</th>
                                 <th><i class="bi bi-people"></i> Position</th>
                                 {{--                                <th data-hide="phone,tablet"><i class="fa fa-fw fa-map-marker txt-color-blue hidden-md hidden-sm hidden-xs"></i> Zip</th>--}}
-                                <th data-hide="phone,tablet"><i class="bi bi-check-circle-fill text-success"></i> <i class="bi bi-dash-circle-fill text-secondary"></i> Status</th>
+                                <th data-hide="phone,tablet"><i class="bi bi-check-circle-fill text-success"></i></i> Status</th>
                                 <th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Date</th>
                             </tr>
                             </thead>
