@@ -67,7 +67,7 @@
 
                             <div class="col-md-12 col-lg-12 col-xl-12">
 
-                                <h5 class="font-weight-bold mb-3 text-center text-lg-start" style="font-weight: bold">Member</h5>
+                                <h5 class="font-weight-bold mb-3 text-center text-lg-start" id="member" style="font-weight: bold">Member</h5>
 
                                 <div class="card" id="html">
 {{--                                    <div class="card-body">--}}
@@ -106,7 +106,7 @@
 
             <!-- footer: refresh area -->
             <span> Last updated on: 12/12/2013 9:43AM
-						<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
+						<button type="button" onclick="work('work')" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
 							<i class="fa fa-refresh"></i>
 						</button>
 					</span>
@@ -277,60 +277,69 @@
     </div>
     <!-- end pulled right: nav area -->
     <script>
-        $.ajax({
-            url: "https://api.telegram.org/bot7018883218:AAEUBrtKS1YGgPqliKbHqEfhN5jneK4CG7g/getupdates",
-            cache: false,
-            success: function (response) {
+        var par;
+        work();
+        function work(par=null){
+            $.ajax({
+                url: "https://api.telegram.org/bot6897449340:AAES1vjyLkLeadOVVr0N2iBVCzyyW2vugNk/getupdates",
+                cache: false,
+                success: function (response) {
 
-                response['result'].forEach(element => {
-                    var chat_id = element['message']['chat']['id'];
-                    var text = element['message']['text'];
-                    var fullName = element['message']['chat']['first_name'] + ' ' + element['message']['chat']['last_name'];
-                    var first_name = element['message']['chat']['first_name'];
-                    var last_name = element['message']['chat']['last_name'];
-
-                    if(chat_id === chat_id){
-                        localStorage.setItem('chat_id' , chat_id);
+                    console.log(response['result'].length)
+                    if(response['result'].length == 0){
+                        $('#html').html('<p style="display: flex;justify-content: center;align-items: center;font-size: 18px">The Member is Empty</p>');
+                        $('#member').text('');
+                        return;
                     }
-                    localStorage.setItem('text' , text);
-                    localStorage.setItem('fullName' , fullName);
-                    localStorage.setItem('first_name' , first_name);
-                    localStorage.setItem('last_name' , last_name);
 
-                    // console.log(fullName)
-                    // console.log(chat_id)
-                })
-                var form = new FormData();
+                    response['result'].forEach(element => {
+                        var chat_id = element['message']['chat']['id'];
+                        var text = element['message']['text'];
+                        var fullName = element['message']['chat']['first_name'] + ' ' + element['message']['chat']['last_name'];
+                        var first_name = element['message']['chat']['first_name'];
+                        var last_name = element['message']['chat']['last_name'];
 
-                // form.append("image", fileInput.files[0], "/C:/Users/programmer/Desktop/1677655912700.png");
+                        if(chat_id === chat_id){
+                            localStorage.setItem('chat_id' , chat_id);
+                        }
+                        localStorage.setItem('text' , text);
+                        localStorage.setItem('fullName' , fullName);
+                        localStorage.setItem('first_name' , first_name);
+                        localStorage.setItem('last_name' , last_name);
 
-                // form.append("image", $('#notification')[0].files[0]);
-                form.append("text", localStorage.getItem('text'));
-                form.append("chat_id", localStorage.getItem('chat_id'));
-                form.append("fullName", localStorage.getItem('fullName'));
-                form.append("first_name", localStorage.getItem('first_name'));
-                form.append("last_name", localStorage.getItem('last_name'));
-                form.append("_token", "{{ csrf_token() }}");
+                        // console.log(fullName)
+                        // console.log(chat_id)
+                    })
+                    var form = new FormData();
 
-                $.ajax({
-                    // url: "https://api.telegram.org/bot7018883218:AAEUBrtKS1YGgPqliKbHqEfhN5jneK4CG7g/sendMessage?chat_id=" + chat_id + '&text=' + text,
-                    url: "{{route('customer.store')}}",
-                    // "url": "http://127.0.0.1:8000/api/product/store",
-                    "method": "POST",
-                    headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
-                    "timeout": 0,
-                    "processData": false,
-                    "mimeType": "multipart/form-data",
-                    "contentType": false,
-                    data:form,
-                    success: function (response) {
-                        response = JSON.parse(response)
-                        var html = '';
-                        var res = response['customer'];
-                        for(var i = 0;i<res.length;i++){
-                            console.log(res[i].fullName);
-                            html += `
-                                        <div class="card-body">
+                    // form.append("image", fileInput.files[0], "/C:/Users/programmer/Desktop/1677655912700.png");
+
+                    // form.append("image", $('#notification')[0].files[0]);
+                    form.append("text", localStorage.getItem('text'));
+                    form.append("chat_id", localStorage.getItem('chat_id'));
+                    form.append("fullName", localStorage.getItem('fullName'));
+                    form.append("first_name", localStorage.getItem('first_name'));
+                    form.append("last_name", localStorage.getItem('last_name'));
+                    form.append("_token", "{{ csrf_token() }}");
+
+                    $.ajax({
+                        // url: "https://api.telegram.org/bot7018883218:AAEUBrtKS1YGgPqliKbHqEfhN5jneK4CG7g/sendMessage?chat_id=" + chat_id + '&text=' + text,
+                        url: "{{route('customer.store')}}",
+                        // "url": "http://127.0.0.1:8000/api/product/store",
+                        "method": "POST",
+                        headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                        "timeout": 0,
+                        "processData": false,
+                        "mimeType": "multipart/form-data",
+                        "contentType": false,
+                        data:form,
+                        success: function (response) {
+                            response = JSON.parse(response)
+                            var html = '';
+                            var res = response['customer'];
+                            for(var i = 0;i<res.length;i++){
+                                html += `
+                                        <div class="card-body" id="">
 
                                         <div class="list-unstyled mb-0">
                                             <div class="p-2 border-bottom bg-body-tertiary">
@@ -340,7 +349,7 @@
                                                              class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60" style="border-radius: 50%">
                                                         <div class="pt-1" style="padding-left: 10px">
                                                             <p class="fw-bold mb-0">` + res[i].fullName + `</p>
-                                                            <p class="small text-muted">` + res[i].text + `</p>
+                                                            <p class="small text-muted">` + localStorage.getItem('text') + `</p>
                                                         </div>
                                                     </div>
                                                     <div class="pt-1">
@@ -354,20 +363,27 @@
                                     </div>
 
                                     `
+                            }
+                            console.log(localStorage.getItem('text'))
+
+                            if(par == null){
+                                $('#html').append(html);
+                            }else{
+                                $('#html').empty();
+                                $('#html').append(html);
+                            }
+
+                            // response.forEach(res => {
+                            //     console.log(res);
+                            // })
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.log(textStatus, errorThrown);
                         }
-
-                        $('#html').append(html);
-
-                        // response.forEach(res => {
-                        //     console.log(res);
-                        // })
-                    },
-                    error: function(jqXHR, textStatus, errorThrown) {
-                        console.log(textStatus, errorThrown);
-                    }
-                });
-            }
-        });
+                    });
+                }
+            });
+        }
     </script>
 </header>
 <!-- END HEADER -->
