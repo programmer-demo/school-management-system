@@ -39,15 +39,15 @@
                             <thead>
                             <tr>
                                 <th data-hide="phone">ID</th>
-                                <th data-class="expand"><i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Name</th>
-                                <th>Gender</th>
-                                <th>Date Of Birth</th>
-                                <th>Place Of Birth</th>
-                                <th data-hide="phone,tablet">Image</th>
-                                <th data-hide="phone,tablet">Status</th>
-                                <th>Payment ID</th>
-                                <th>User ID</th>
-                                <th>Created At</th>
+                                <th data-class="expand"><i class="bi bi-person-circle"></i> Name</th>
+                                <th><i class="bi bi-gender-ambiguous"></i> Gender</th>
+                                <th><i class="bi bi-calendar-date"></i> Date Of Birth</th>
+                                <th><i class="bi bi-geo-alt"></i> Place Of Birth</th>
+                                <th data-hide="phone,tablet"><i class="bi bi-images"></i> Image</th>
+                                <th data-hide="phone,tablet"><i class="bi bi-info-circle"></i> Status</th>
+                                <th><i class="bi bi-credit-card"></i> Payment ID</th>
+                                <th><i class="bi bi-person-badge"></i> User ID</th>
+                                <th><i class="bi bi-clock"></i> Created At</th>
                             </tr>
                             </thead>
                             <tbody>

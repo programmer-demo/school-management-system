@@ -3,7 +3,7 @@
     <div id="main" role="main">
 
         <div id="ribbon">
-            
+
 				<span class="ribbon-button-alignment">
 					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
 						<i class="fa fa-refresh"></i>
@@ -40,12 +40,12 @@
                             <thead>
                             <tr>
                                 <th data-hide="phone">ID</th>
-                                <th data-class="expand"><i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Name</th>
+                                <th data-class="expand"><i class="bi bi-person-vcard-fill"></i> Name</th>
                                 <th data-hide="phone"><i class="fa fa-fw fa-phone text-muted hidden-md hidden-sm hidden-xs"></i> Phone</th>
-                                <th>Gender</th>
-                                <th>Position</th>
+                                <th><i class="bi bi-gender-ambiguous"></i> Gender</th>
+                                <th><i class="bi bi-people"></i> Position</th>
                                 {{--                                <th data-hide="phone,tablet"><i class="fa fa-fw fa-map-marker txt-color-blue hidden-md hidden-sm hidden-xs"></i> Zip</th>--}}
-                                <th data-hide="phone,tablet">Status</th>
+                                <th data-hide="phone,tablet"><i class="bi bi-check-circle-fill text-success"></i> <i class="bi bi-dash-circle-fill text-secondary"></i> Status</th>
                                 <th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Date</th>
                             </tr>
                             </thead>

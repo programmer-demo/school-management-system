@@ -32,6 +32,7 @@
     <!-- FAVICONS -->
     <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- GOOGLE FONT -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">

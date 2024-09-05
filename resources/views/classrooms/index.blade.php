@@ -12,7 +12,7 @@
 				</span>
 
             <ol class="breadcrumb">
-                <li>Dashboard</li><li>ClassRoom</li>
+                <li>Dashboard</li><li>Classroom</li>
             </ol>
         </div>
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
@@ -34,17 +34,17 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="table-responsive card card-body">
                         <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
                             <thead>
                             <tr>
                                 <th data-hide="phone">ID</th>
-                                <th data-class="expand"><i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i>Class Name</th>
-                                <th>Schedule</th>
-                                <th>Teacher ID</th>
-                                <th>Created At</th>
+                                <th data-class="expand"><i class="bi bi-book"></i> Class Name</th>
+                                <th><i class="bi bi-calendar3"></i> Schedule</th>
+                                <th><i class="bi bi-people"></i> Teacher ID</th>
+                                <th><i class="bi bi-clock-history"></i> Created At</th>
                             </tr>
                             </thead>
                             <tbody>
