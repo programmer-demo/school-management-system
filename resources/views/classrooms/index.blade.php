@@ -1,3 +1,4 @@
+
 @extends('layouts.main')
 @section('content')
     <div id="main" role="main">
@@ -11,7 +12,7 @@
 				</span>
 
             <ol class="breadcrumb">
-                <li>Dashboard</li><li>User</li>
+                <li>Dashboard</li><li>Classroom</li>
             </ol>
         </div>
         <div id="content" class="dataTables_wrapper form-inline dt-bootstrap no-footer ">
@@ -22,11 +23,11 @@
                         <div class="col-8" style="display:flex">
                             <span class="input-group-addon" id="icon-search" style="width: 50px">
                                 <i class="glyphicon glyphicon-search"></i>
-                           </span>
-                           <input type="text" class="form-control" placeholder="search" id="input-search" style="width: 100% !importent">
+                            </span>
+                            <input type="text" class="form-control" placeholder="search" id="input-search" style="width: 100% !importent">
                         </div>
-                        <div class="col-4">
-                                {{--  create button --}}
+                         <div class="col-4">
+                        {{--  create button --}}
                             <span id="btn" class="">
                                 <button type="button" class="btn btn-success">Add</button>
                             </span>
@@ -40,26 +41,21 @@
                             <thead>
                             <tr>
                                 <th data-hide="phone">ID</th>
-                                <th data-class="expand"><i class="bi bi-person-vcard-fill"></i> Name</th>
-                                <th data-hide="phone"><i class="fa fa-fw fa-phone text-muted hidden-md hidden-sm hidden-xs"></i> Phone</th>
-                                <th><i class="bi bi-gender-ambiguous"></i> Gender</th>
-                                <th><i class="bi bi-people"></i> Position</th>
-                                {{--                                <th data-hide="phone,tablet"><i class="fa fa-fw fa-map-marker txt-color-blue hidden-md hidden-sm hidden-xs"></i> Zip</th>--}}
-                                <th data-hide="phone,tablet"><i class="bi bi-check-circle-fill text-success"></i></i> Status</th>
-                                <th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i> Date</th>
+                                <th data-class="expand"><i class="bi bi-book"></i> Class Name</th>
+                                <th><i class="bi bi-calendar3"></i> Schedule</th>
+                                <th><i class="bi bi-people"></i> Teacher ID</th>
+                                <th><i class="bi bi-clock-history"></i> Created At</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($users as $user)
+                            @foreach($classrooms as $classroom)
                                 <tr>
-                                    <td>{{$user->id}}</td>
-                                    <td>{{$user->name}}</td>
-                                    <td>{{$user->phone}}</td>
-                                    <td>{{$user->gender}}</td>
-                                    {{--                                        <td>35728</td>--}}
-                                    <td>{{$user->position}}</td>
+                                    <td>{{$classroom->id}}</td>
+                                    <td>{{$classroom->name}}</td>
+                                    <td>{{$classroom->schedule}}</td>
+                                    <td>{{$classroom->teacher_id}}</td>
                                     <td>
-                                        @if ($user->is_active)
+                                        @if ($classroom->status)
                                             <label class="badge badge-info" style="background-color:#196eec">
                                                 active
                                             </label>
@@ -69,7 +65,7 @@
                                             </label>
                                         @endif
                                     </td>
-                                    <td>{{$user->created_at}}</td>
+                                    <td>{{$classroom->created_at}}</td>
                                 </tr>
                             @endforeach
                             </tbody>

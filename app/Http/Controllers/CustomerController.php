@@ -2,17 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
-class SettingCottroller extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('settings.index');
+        //
     }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -26,7 +28,21 @@ class SettingCottroller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if (!Customer::where('chat_id', '=', $request->chat_id)->exists()) {
+            $customer = Customer::create([
+                'chat_id' => $request->chat_id,
+                'fullName' => $request->first_name . ' ' . $request->last_name,
+                'first_name' => $request->first_name,
+                'last_name' => $request->last_name,
+                'text' => $request->text,
+                'gender' => '',
+                'address' => '',
+            ]);
+        }else{
+            $customer = Customer::orderBy('id' , 'DESC')->get();
+            return response()->json(['message' => 'already exist' , 'customer' => $customer]);
+        }
+        return response()->json(['message' => 'success' , 'customer' => $customer]);
     }
 
     /**

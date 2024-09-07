@@ -2,17 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
+use App\Models\Room;
 use Illuminate\Http\Request;
 
-class SettingCottroller extends Controller
+class ClassRoomController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('settings.index');
+        $classrooms = Room ::get();
+        return view('classrooms.index' , compact('classrooms'));
     }
+
     /**
      * Show the form for creating a new resource.
      */
