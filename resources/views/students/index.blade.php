@@ -28,7 +28,7 @@
                         <div class="col-4">
                             {{--  create button --}}
                             <span id="btn" class="">
-                                <button type="button" class="btn btn-success">Add</button>
+                                <button type="button" class="btn btn-success"><i class="fa fa-plus" style="margin-right: 10px;"></i>Add</button>
                             </span>
                         </div>
                     </div>
