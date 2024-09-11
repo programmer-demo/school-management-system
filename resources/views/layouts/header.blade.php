@@ -1,6 +1,6 @@
 <!-- HEADER -->
-<header id="header" style="margin-bottom: 10px;">
-    <div id="logo-group" style="width:25%; margin-bottom:25px; display:flex; align-item:center;  gap:1rem; background-color:blue;">
+<header id="header">
+    <div id="logo-group" style="width:25%; margin-bottom:25px; display:flex; align-item:center;  gap:1rem;">
 
         <!-- PLACE YOUR LOGO HERE -->
         {{-- <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="{{ asset('logo/logo.jpg') }}" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span> --}}
