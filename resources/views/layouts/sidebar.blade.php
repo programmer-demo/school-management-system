@@ -40,7 +40,7 @@
             </li>
             <li class="">
                 <a href="#" title="">
-                    <i></i>
+                    <i class="bi bi-person-standing"></i>
                     <span class="menu-item-parent">Teachers</span>
                 </a>
             </li>
