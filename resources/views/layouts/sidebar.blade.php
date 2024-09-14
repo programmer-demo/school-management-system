@@ -40,6 +40,12 @@
             </li>
             <li class="">
                 <a href="#" title="">
+                    <i></i>
+                    <span class="menu-item-parent">Teachers</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#" title="">
                     <i class="fa fa-lg fa-fw fa-book"></i>
                     <span class="menu-item-parent">Subjects</span>
                 </a>
