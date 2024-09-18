@@ -45,7 +45,7 @@
                 </a>
             </li>
             <li class="">
-                <a href="#" title="">
+                <a href="{{route('subjects.index')}}" title="">
                     <i class="fa fa-lg fa-fw fa-book"></i>
                     <span class="menu-item-parent">Subjects</span>
                 </a>
