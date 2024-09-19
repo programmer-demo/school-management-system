@@ -5,6 +5,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\SettingCottroller;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\SubjectController;
+use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserProfileController;
 use Illuminate\Support\Facades\Auth;
@@ -24,6 +25,7 @@ Route::group(['middleware' => ['auth']] , function (){
     Route::get('userProfiles',[UserProfileController::class,'index'])->name('userProfile.index');
     Route::get('classrooms', [ClassRoomController::class,'index'])->name('classrooms.index');
     Route::get('subjects', [SubjectController::class,'index'])->name('subjects.index');
+    Route::get(uri: 'teachers',action: [TeacherController::class,'index'])->name(name: 'teachers.index');
 });
 
 Auth::routes();

@@ -39,8 +39,8 @@
                 </a>
             </li>
             <li class="">
-                <a href="#" title="">
-                    <i class="bi bi-person-standing"></i>
+                <a href="{{route('teachers.index')}}" title="">
+                    <i class="fa fa-lg fa-fw fa-male"></i>
                     <span class="menu-item-parent">Teachers</span>
                 </a>
             </li>
