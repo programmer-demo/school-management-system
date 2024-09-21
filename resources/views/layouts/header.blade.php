@@ -1,13 +1,15 @@
 <!-- HEADER -->
 <header id="header">
-    <div id="logo-group" style="width:30%; margin-bottom:0px; display:flex; align-item:center;  gap:1rem;">
+    <div id="logo-group" style="width:60rem !important; margin-bottom:0px; display:flex; align-item:center;  gap:1rem;">
 
         <!-- PLACE YOUR LOGO HERE -->
         {{-- <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="{{ asset('logo/logo.jpg') }}" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span> --}}
-        
+
         {{-- <span id="" style=" "> <img src="{{ asset('logo/logo(SMS)1.jpg') }}" alt="" style="width: 50px;border-radius:10%"> </span> --}}
-        <span id="" style=" "> <img src="{{ asset('logo/logo(SMS).jpg') }}" alt="" style="width: 50px;border-radius:10%;padding:0px;"> </span>
-        <span style=" text-align:center; font-size:20px; font-weight:bold; margin:10px 0px;">School Management System</span>
+        <div class="" style="width: 50%;margin:auto;margin-left:8px;margin-right:0">
+            <span id="" style=" "> <img src="{{ asset('logo/logo(SMS).jpg') }}" alt="" style="width: 10%;border-radius:10%;padding:0px;margin:auto"> </span>
+            <span style=" text-align:center; font-size:18px; font-weight:bold;margin-left:8px">School Management System</span>
+        </div>
         {{-- <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="{{ asset('logo/logo(SMS).jpg') }}" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span> --}}
 
         {{-- <span id="logo" style="margin:auto;padding:0;display:flex;justify-content:center;align-item:center"> <img src="https://p7.hiclipart.com/preview/1008/987/663/school-information-management-system-education-student-management.jpg" alt="" style="width: 50px;border-radius:10%"> <span style="margin-left: 10px !important;font-size:12px !important">School Management System</span></span> --}}
