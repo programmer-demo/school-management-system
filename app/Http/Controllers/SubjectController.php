@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Subject;
 
 class SubjectController extends Controller
 {
@@ -11,7 +12,8 @@ class SubjectController extends Controller
      */
     public function index()
     {
-        return view('subjects.index');
+        $subjects = Subject::get();
+        return view('subjects.index' , compact('subjects'));
     }
 
     /**
