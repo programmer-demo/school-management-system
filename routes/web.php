@@ -26,6 +26,12 @@ Route::group(['middleware' => ['auth']] , function (){
     Route::get('classrooms', [ClassRoomController::class,'index'])->name('classrooms.index');
     Route::get('subjects', [SubjectController::class,'index'])->name('subjects.index');
     Route::get(uri: 'teachers',action: [TeacherController::class,'index'])->name(name: 'teachers.index');
+
+    //
+    // Route::resource('setting', SettingCottroller::class);
+    Route::get('setting/{setting}/edit', [SettingCottroller::class, 'edit'])->name('setting.edit');
+
+
 });
 
 Auth::routes();

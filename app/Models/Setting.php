@@ -12,4 +12,9 @@ class Setting extends Model
     protected $fillable = [
         'name' , 'phone' , 'address' , 'logo'
     ];
+    public function edit(Setting $setting)
+    {
+        return view('settings.edit', compact('setting'));
+    }
+
 }

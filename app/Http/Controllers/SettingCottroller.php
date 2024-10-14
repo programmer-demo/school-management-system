@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Setting;
 use Illuminate\Http\Request;
 
 class SettingCottroller extends Controller
@@ -42,15 +43,31 @@ class SettingCottroller extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $setting = Setting::findOrFail($id); // Retrieve the setting by its ID
+        return view('settings.edit', compact('setting')); // Pass the setting to the view
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $id,setting $setting)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
+            'logo' => 'required',
+        ]);
+
+        $setting = Setting::find($id);
+
+        $setting->setting->update([
+            'name' => $request->setting_name,
+            'phone' => $request->phone,
+            'address' => $request->address,
+            'logo' => $request->logo,
+        ]);
+        return redirect()->route('setting.edit', ['setting' => $setting->id]);
     }
 
     /**
