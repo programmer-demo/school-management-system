@@ -28,8 +28,8 @@ Route::group(['middleware' => ['auth']] , function (){
     Route::get(uri: 'teachers',action: [TeacherController::class,'index'])->name(name: 'teachers.index');
 
     //
-    // Route::resource('setting', SettingCottroller::class);
-    Route::get('setting/{setting}/edit', [SettingCottroller::class, 'edit'])->name('setting.edit');
+    Route::resource('settings/{id}/edit', SettingCottroller::class);
+    //Route::get('setting/{setting}/edit', [SettingCottroller::class, 'edit'])->name('setting.edit');
 
 
 });

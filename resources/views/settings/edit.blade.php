@@ -15,7 +15,7 @@
             <div class="col-sm-8 col-md-8 col-lg-6">
 
                 <!-- form edit -->
-                <form action="{{ route('setting.update' , $setting->id) }}" method="POST">
+                <form action="/settings/{{ $setting->id }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="row">
