@@ -43,8 +43,8 @@ class SettingCottroller extends Controller
      */
     public function edit(string $id)
     {
-        $setting = Setting::findOrFail($id); // Retrieve the setting by its ID
-        return view('settings.edit', compact('setting')); // Pass the setting to the view
+        $setting = Setting::findOrFail($id); // Load the setting by ID
+        return view('settings.edit',compact('setting'));
     }
 
     /**
@@ -52,7 +52,7 @@ class SettingCottroller extends Controller
      */
     public function update(Request $request, string $id,setting $setting)
     {
-        $request->validate([
+        $setting->validate([
             'name' => 'required',
             'phone' => 'required',
             'address' => 'required',
@@ -62,12 +62,12 @@ class SettingCottroller extends Controller
         $setting = Setting::find($id);
 
         $setting->setting->update([
-            'name' => $request->setting_name,
+            'name' => $request->name,
             'phone' => $request->phone,
             'address' => $request->address,
             'logo' => $request->logo,
         ]);
-        return redirect()->route('setting.edit', ['setting' => $setting->id]);
+        return redirect()->route('settings.index');
     }
 
     /**

@@ -15,13 +15,13 @@
             <div class="col-sm-8 col-md-8 col-lg-6">
 
                 <!-- form edit -->
-                <form action="/settings/{{ $setting->id }}" method="POST">
+                <form action="{{ route('settings.update', $setting->id) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="row">
                         <div class="col-6">
-                            <label for="setting_name" class="mb-2">Setting Name</label>
-                            <input type="text" class="form-control" id="setting_name" name="setting_name" value="{{ $setting->name }}" placeholder="Enter ID Card" required>
+                            <label for="name" class="mb-2">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" value="{{ $setting->name }}" placeholder="Enter ID Card" required>
                         </div>
                         <div class="col-6">
                             <label for="phone" class="mb-2">Phone Number</label>
@@ -39,10 +39,10 @@
                     <div class="row text-end mt-4">
                         <div class="col-12">
                             <button type="reset" class="btn btn-sm btn-danger">Reset</button>
-                            <button type="submit" class="btn btn-sm btn-primary">Save</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Update</button>
                         </div>
                     </div>
-                </form>
+                </form> 
 
                 <!-- end form edit -->
             </div>
