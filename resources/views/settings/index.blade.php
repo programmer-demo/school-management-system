@@ -30,7 +30,7 @@
                                     </h5>
                                 </div>
                                 <div class="col-xs-3 col-sm-3 col-md-3 col-xl-3 text-right" style="padding-left: 0 !important;margin: 0 !important;">
-                                    <a href="#">Edit</a>
+                                    <a href="{{ route('settings.edit', $setting->id) }}">Edit</a>
                                 </div>
                             </div>
                             <div class="description">
