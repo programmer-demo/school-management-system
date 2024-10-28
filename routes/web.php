@@ -27,8 +27,8 @@ Route::group(['middleware' => ['auth']] , function (){
     Route::get('subjects', [SubjectController::class,'index'])->name('subjects.index');
     Route::get(uri: 'teachers',action: [TeacherController::class,'index'])->name(name: 'teachers.index');
 
-    //
-    Route::get('settings/{id}/edit', [SettingCottroller::class, 'edit'])->name('settings.edit');
+    //My name is Eang Arn.This my route
+    route::get('edit',[SettingCottroller::class,'btnEdit']);
 
     // My name is khat luch. This my route.
     route::get('form-add',[SubjectController::class,'addSub']);

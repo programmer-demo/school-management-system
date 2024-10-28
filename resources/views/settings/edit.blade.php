@@ -15,25 +15,25 @@
             <div class="col-sm-8 col-md-8 col-lg-6">
 
                 <!-- form edit -->
-                <form action="{{ route('settings.update', $setting->id) }}" method="POST">
+                <form method="POST">
                     @csrf
                     @method('PUT')
                     <div class="row">
                         <div class="col-6">
                             <label for="name" class="mb-2">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" value="{{ $setting->name }}" placeholder="Enter ID Card" required>
+                            <input type="text" class="form-control" id="name" name="name" value="" placeholder="Enter ID Card" required>
                         </div>
                         <div class="col-6">
                             <label for="phone" class="mb-2">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" name="phone" value="{{ $setting->phone }}" placeholder="Enter Name" required>
+                            <input type="text" class="form-control" id="phone" name="phone" value="" placeholder="Enter Name" required>
                         </div>
                         <div class="col-6 mt-4">
                             <label for="address" class="mb-2">Address</label>
-                            <input type="text" class="form-control" id="address" name="address" value="{{ $setting->address }}" placeholder="Enter Name" required>
+                            <input type="text" class="form-control" id="address" name="address" value="" placeholder="Enter Name" required>
                         </div>
                         <div class="col-6 mt-4">
                             <label for="logo" class="mb-2">Faculty</label>
-                            <input type="text" class="form-control" id="logo" name="logo" value="{{ $setting->logo }}" placeholder="Enter Faculty" required>
+                            <input type="text" class="form-control" id="logo" name="logo" value="" placeholder="Enter Faculty" required>
                         </div>
                     </div>
                     <div class="row text-end mt-4">
