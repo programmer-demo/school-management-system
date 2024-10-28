@@ -19,9 +19,9 @@ class SubjectController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function addSub()
     {
-        //
+        return view('subjects.formAdd');
     }
 
     /**

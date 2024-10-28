@@ -31,7 +31,9 @@ Route::group(['middleware' => ['auth']] , function (){
     Route::resource('settings/{id}/edit', SettingCottroller::class);
     //Route::get('setting/{setting}/edit', [SettingCottroller::class, 'edit'])->name('setting.edit');
 
-
+    // My name is khat luch. This my route.
+    route::get('form-add',[SubjectController::class,'addSub']);
+    
 });
 
 Auth::routes();
