@@ -12,34 +12,34 @@
             </ol>
         </div>
         <div class="" style="margin-top:20px !important;width: 100%;display: flex !important;justify-content: center !important;align-items: center !important;">
-            <div class="col-sm-8 col-md-8 col-lg-6">
+            <div class="col-sm-8 col-md-8 col-lg-10">
 
                 <!-- form edit -->
                 <form method="POST">
                     @csrf
                     @method('PUT')
                     <div class="row">
-                        <div class="col-6">
-                            <label for="name" class="mb-2">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" value="" placeholder="Enter ID Card" required>
+                        <div class="col-lg-6">
+                            <label for="name" class="mb-2 mt-3">Name</label>
+                            <input type="text" class="form-control mb-2" id="name" name="name" value="" placeholder="Enter setting name" required>
                         </div>
-                        <div class="col-6">
-                            <label for="phone" class="mb-2">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" name="phone" value="" placeholder="Enter Name" required>
+                        <div class="col-lg-6">
+                            <label for="phone" class="mb-2 mt-3">Phone Number</label>
+                            <input type="text" class="form-control mb-2" id="phone" name="phone" value="" placeholder="Enter phone number" required>
                         </div>
-                        <div class="col-6 mt-4">
-                            <label for="address" class="mb-2">Address</label>
-                            <input type="text" class="form-control" id="address" name="address" value="" placeholder="Enter Name" required>
+                        <div class="col-lg-6">
+                            <label for="address" class="mb-2 mt-3">Address</label>
+                            <input type="text" class="form-control mb-2" id="address" name="address" value="" placeholder="Enter address" required>
                         </div>
-                        <div class="col-6 mt-4">
-                            <label for="logo" class="mb-2">Faculty</label>
-                            <input type="text" class="form-control" id="logo" name="logo" value="" placeholder="Enter Faculty" required>
+                        <div class="col-lg-6">
+                            <label for="logo" class="mb-2 mt-3">Logo</label>
+                            <input type="text" class="form-control mb-2" id="logo" name="logo" value="" placeholder="Enter logo" required>
                         </div>
                     </div>
                     <div class="row text-end mt-4">
-                        <div class="col-12">
-                            <button type="reset" class="btn btn-sm btn-danger">Reset</button>
-                            <button type="submit" class="btn btn-sm btn-primary">Update</button>
+                        <div class="col-lg-12 mt-4">
+                            <button type="reset" class="btn btn-sm btn-danger mb-4 mt-lg-2">Reset</button>
+                            <button type="submit" class="btn btn-sm btn-primary mb-4">Save</button>
                         </div>
                     </div>
                 </form> 
