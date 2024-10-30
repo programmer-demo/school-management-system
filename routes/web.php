@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ClassRoomController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\SettingCottroller;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\SubjectController;
@@ -29,6 +30,7 @@ Route::group(['middleware' => ['auth']] , function (){
 
     //My name is Eang Arn.This my route
     route::get('edit',[SettingCottroller::class,'btnEdit']);
+    Route::get('payments', [PaymentController::class,'index'])->name('payments.index');
 
     // My name is khat luch. This my route.
     route::get('form-add',[SubjectController::class,'addSub']);

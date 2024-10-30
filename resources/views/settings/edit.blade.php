@@ -36,14 +36,14 @@
                             <input type="text" class="form-control mb-2" id="logo" name="logo" value="" placeholder="Enter logo" required>
                         </div>
                     </div>
-                    <div class="row text-end mt-4">
-                        <div class="col-lg-12 mt-4">
+                    <div class="row text-end t-4">
+                        <div class="col-lg-12 t-4">
                             <button type="reset" class="btn btn-sm btn-danger mb-4 mt-lg-2">Reset</button>
                             <button type="submit" class="btn btn-sm btn-primary mb-4">Save</button>
                         </div>
                     </div>
                 </form> 
-
+                
                 <!-- end form edit -->
             </div>
         </div>
