@@ -54,7 +54,7 @@
                 <a href="#"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">Payment</span></a>
                 <ul>
                     <li>
-                        <a href="#">Payment</a>
+                        <a href="{{ route('payments.index')}}">Payment</a>
                     </li>
                     <li>
                         <a href="#">Payment Detail</a>
