@@ -33,6 +33,10 @@ Route::group(['middleware' => ['auth']] , function (){
     // My name is khat luch. This my route.
     route::get('form-add',[SubjectController::class,'addSub']);
     
+    route::get('form-teacher',[TeacherController::class,'frmAdd']);
+
+
+    
 });
 
 Auth::routes();

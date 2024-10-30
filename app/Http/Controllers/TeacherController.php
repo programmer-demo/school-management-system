@@ -19,6 +19,10 @@ class TeacherController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+    public function frmAdd(){
+     
+         return view('teachers.frmTeacher');
+    }
     public function create()
     {
         //
