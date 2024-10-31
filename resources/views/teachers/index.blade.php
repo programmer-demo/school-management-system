@@ -30,6 +30,7 @@
                             <span id="btn" class="">
                                <a href="{{url('form-teacher')}}"> <button type="button" class="btn btn-success"><i class="fa fa-plus" style="margin-right: 10px;"></i>Add</button></a>
                             </span>
+                           
                         </div>
                     </div>
                 </div>
@@ -67,9 +68,7 @@
                             @endforeach
                             </tbody>
                         </table>
-                        <div>
-
-                        </div>
+                        
                     </div>
                 </div>
             </div>

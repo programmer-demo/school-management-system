@@ -27,7 +27,8 @@
       <input type="text" placeholder="Gender">
     </div>
     <div class="field">
-      <div class="fas fa-location-crosshairs"></div>
+  
+      <div class="fas fa-map"></div>
       <input type="text" placeholder="Address">
     </div>
     <div class="field">
@@ -40,19 +41,15 @@
     </div>
     <div class="field">
       <div class="fas fa-id-badge"></div>
-      <input type="password" placeholder="Student ID">
+      <input type="text" placeholder="Student ID">
     </div>
     <div class="field">
-      <div class="fas fa-lock"></div>
-      <input type="password" placeholder="Room ID">
+      <div class="fas fa-house-user"></div>
+      <input type="text" placeholder="Room ID">
     </div>
     <div class="field">
-      <div class="fas fa-lock"></div>
-      <input type="password" placeholder="User ID">
-    </div>
-    <div class="field">
-      <div class="fas fa-lock"></div>
-      <input type="password" placeholder="Room ID">
+      <div class="fas fa-users"></div>
+      <input type="text" placeholder="User ID">
     </div>
 
     <button>Submit</button>
