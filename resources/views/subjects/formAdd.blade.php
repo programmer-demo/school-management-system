@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="{{asset('formSub/style.css')}}">
 </head>
 <body>
-    <h1>Add SubJect</h1>
-    <hr>
-    <!-- partial:index.partial.html -->
-<body>
     <section class="container">
       <div class="login-container">
         <div class="circle circle-one"></div>

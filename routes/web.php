@@ -33,9 +33,18 @@ Route::group(['middleware' => ['auth']] , function (){
     Route::get('payments', [PaymentController::class,'index'])->name('payments.index');
 
     // My name is khat luch. This my route.
+// Subject
     route::get('form-add',[SubjectController::class,'addSub']);
-    
-    route::get('form-teacher',[TeacherController::class,'frmAdd']);
+// Teacher
+    route::get('form-teacher',[TeacherController::class,'frmAddTeacher']);
+// Studnet
+    route::get('form-student',[StudentController::class,'frmAddStudent']);
+// Payents
+    route::get('form-payment',[PaymentController::class,'frmAddPayment']);
+// Class Room
+    route::get('form-class-room',[ClassRoomController::class,'frmAddClassRoom']);
+
+
 
 
     

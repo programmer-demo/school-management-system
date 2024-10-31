@@ -10,7 +10,7 @@
 <!-- partial:index.partial.html -->
 <div class="login-form">
   <div class="text">
-    Teacher Add
+    Students Add
   </div>
   <form >
     <div class="field">
@@ -27,25 +27,24 @@
       <input type="text" placeholder="Gender">
     </div>
     <div class="field">
-  
+      <div class="fas fa-calendar"></div>
+      <input type="date" placeholder="Date Of Birth">
+    </div>
+    <div class="field">
       <div class="fas fa-map"></div>
-      <input type="text" placeholder="Address">
+      <input type="text" placeholder="Place Of Birth">
     </div>
     <div class="field">
       <div class="fas fa-image"></div>
       <input type="file" placeholder="Image">
     </div>
     <div class="field">
-      <div class="fas fa-id-card"></div>
-      <input type="text" placeholder="Subject ID">
+      <div class="fas fa-exclamation"></div>
+      <input type="text" placeholder="Status">
     </div>
     <div class="field">
-      <div class="fas fa-id-badge"></div>
-      <input type="text" placeholder="Student ID">
-    </div>
-    <div class="field">
-      <div class="fas fa-house-user"></div>
-      <input type="text" placeholder="Room ID">
+      <div class="fas fa-file-invoice-dollar"></div>
+      <input type="text" placeholder="Payment ID">
     </div>
     <div class="field">
       <div class="fas fa-users"></div>
