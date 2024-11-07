@@ -21,6 +21,7 @@
             <input type="text" placeholder="Level" />
             <input type="text" placeholder="Status" />
             <button class="opacity">SUBMIT</button>
+            <button class="opacity"><a href="{{url('subjects')}}">Back</a></button>
           </form>       
         </div>
         <div class="circle circle-two"></div>

@@ -49,6 +49,17 @@
     margin-top: 2em;
     border-radius: 0.3em;
   }
+
+
+  /* My name is khat luch. This is botton style */
+  .btn{
+    display: flex;
+    justify-content: space-between;
+  }
+  #submit ,a{
+    color: white;
+    text-decoration: none;
+    }
   #message-ref {
     font-size: 0.9em;
     margin-top: 1.5em;

@@ -84,6 +84,12 @@ button {
   letter-spacing: 1px;
   cursor: pointer;
 }
+button,a {
+  
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(149, 47, 47);
+}
 button:hover {
   color: #339933;
   border: 1px solid #339933;

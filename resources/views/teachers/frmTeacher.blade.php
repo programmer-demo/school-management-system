@@ -14,10 +14,6 @@
   </div>
   <form >
     <div class="field">
-      <div class="fas fa-hashtag"></div>
-      <input type="text" placeholder="ID">
-    </div>
-    <div class="field">
       
       <div class="fas fa-user-plus"></div>
       <input type="text" placeholder="Name">
@@ -53,6 +49,7 @@
     </div>
 
     <button>Submit</button>
+    <button><a href="{{url('teachers')}}">Back</a></button>
   </form>
 </div>
 <!-- partial -->

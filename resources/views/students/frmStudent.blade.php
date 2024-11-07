@@ -5,6 +5,8 @@
   <title>CodePen - Animated Login Form with Glowing Input</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="{{asset('frmTeacher/style.css')}}">
+    {{-- This is link Tailwin CSS --}}
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -13,10 +15,7 @@
     Students Add
   </div>
   <form >
-    <div class="field">
-      <div class="fas fa-hashtag"></div>
-      <input type="text" placeholder="ID">
-    </div>
+
     <div class="field">
       
       <div class="fas fa-user-plus"></div>
@@ -50,8 +49,10 @@
       <div class="fas fa-users"></div>
       <input type="text" placeholder="User ID">
     </div>
-
     <button>Submit</button>
+
+    <button><a href="{{url('students')}}">Back</a></button>
+    
   </form>
 </div>
 <!-- partial -->
