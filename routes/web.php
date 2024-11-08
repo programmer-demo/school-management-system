@@ -35,6 +35,7 @@ Route::group(['middleware' => ['auth']] , function (){
     // My name is khat luch. This my route.
 // Subject
     route::get('form-add',[SubjectController::class,'addSub']);
+    route::post('save-sub',[SubjectController::class,'saveSub']);
 // Teacher
     route::get('form-teacher',[TeacherController::class,'frmAddTeacher']);
 // Studnet

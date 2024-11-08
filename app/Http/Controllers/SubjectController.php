@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 use App\Models\Subject;
 
@@ -24,6 +25,14 @@ class SubjectController extends Controller
         return view('subjects.formAdd');
     }
 
+    public function saveSub(request $r){
+      
+        $data =$r->except('_token');
+        $insert = DB::table('subjects')->insert($data);
+       // return view('subjects.index' , compact('insert'));
+        dd($insert);
+
+    }
     /**
      * Store a newly created resource in storage.
      */

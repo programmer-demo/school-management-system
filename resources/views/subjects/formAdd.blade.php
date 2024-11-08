@@ -14,12 +14,12 @@
         <div class="form-container">
           {{-- <img src="https://drive.google.com/uc?export=view&id=1bKgdKUQ2Uhx6rjY7LNTuBjLfZhJxKVSq" alt="illustration" class="illustration" /> --}}
           <h1 class="opacity">Add Subject</h1>
-          <form method="POST" action="">
+          <form method="POST" action="{{url('save-sub')}}">
             @csrf
-            <input type="text" placeholder="ID" />
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Level" />
-            <input type="text" placeholder="Status" />
+            <input type="text" placeholder="Name" name="name" />
+            <input type="text" placeholder="Level" name="level" />
+            <input type="number" placeholder="Status" name="status"/>
+            <input type="time" placeholder="Creat At" name="created_at"/>
             <button class="opacity">SUBMIT</button>
             <button class="opacity"><a href="{{url('subjects')}}">Back</a></button>
           </form>       
