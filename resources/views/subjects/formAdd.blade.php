@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="{{asset('formSub/style.css')}}">
+        {{-- This is link Tailwin CSS --}}
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 </head>
 <body>
     <section class="container">
       <div class="login-container">
         <div class="circle circle-one"></div>
         <div class="form-container">
+        {{-- Message --}}
+          @if(Session::has('Success'))              
+            <h2 style="color: green">{{session('Success')}}</h2>    
+          @else
+          <h2 style="color: rgb(255, 0, 0)">{{session('Error')}}</h2>
+          @endif
+          
           {{-- <img src="https://drive.google.com/uc?export=view&id=1bKgdKUQ2Uhx6rjY7LNTuBjLfZhJxKVSq" alt="illustration" class="illustration" /> --}}
           <h1 class="opacity">Add Subject</h1>
           <form method="POST" action="{{url('save-sub')}}">

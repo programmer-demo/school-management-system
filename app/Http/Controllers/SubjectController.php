@@ -28,9 +28,17 @@ class SubjectController extends Controller
     public function saveSub(request $r){
       
         $data =$r->except('_token');
+        //dd($data);
         $insert = DB::table('subjects')->insert($data);
-       // return view('subjects.index' , compact('insert'));
-        dd($insert);
+        if($insert){
+            
+            return redirect(url('form-add'))
+            ->with('Success','Insert is successfully!');
+        }else{
+            return redirect(url('form-add'))
+            ->with('Error','Insert is error!');
+        }
+     
 
     }
     /**
